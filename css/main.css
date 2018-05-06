@@ -1,25 +1,28 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1.3em;
     color: black;
     background: white;
 }
+
 /*******************************************
 CONTAINER
 *******************************************/
-.container{
+.container {
     margin-top: 80px;
     margin-bottom: 15px;
     background: #EFEFEF;
 }
+
 /*******************************************
 PHOTO (AVATAR)
 *******************************************/
-#photo-header{
+#photo-header {
     margin-top: -75px;
 }
-#photo{
+
+#photo {
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -28,13 +31,17 @@ PHOTO (AVATAR)
     background: #EFEFEF;
     display: inline-block;
 }
-#photo img{
+
+#photo img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
 
-#text-header h1{
+/*******************************************
+HEADERS
+*******************************************/
+#text-header h1 {
     margin: 0;
     padding: 0;
     font-size: 2.4em;
@@ -42,19 +49,23 @@ PHOTO (AVATAR)
     text-transform: uppercase;
     letter-spacing: -1px;
 }
-#text-header h1::first-line{
+
+#text-header h1::first-line {
     font-size: 1.5em;
     letter-spacing: -4px;
     font-weight: 800;
     line-height: 1.5em;
 }
-#text-header h1 span{
-    color: #37382F;
+
+#text-header h1 span {
+    color: #D4B12A;
 }
-#text-header h1 sup{
+
+#text-header h1 sup {
     opacity: 0.5;
 }
-#text-header:after{
+
+#text-header:after {
     width: 100%;
     height: 3px;
     border-bottom: 3px solid #A4A4A0;
@@ -63,36 +74,48 @@ PHOTO (AVATAR)
     display: block;
     margin-bottom: 20px;
 }
+
 /*******************************************
 DEFAULT BOX
 *******************************************/
-.box{
+.box {
     margin-bottom: 15px;
 }
-.box h2{
+
+.box h2 {
     color: #37382F;
     font-size: 1.8em;
     font-weight: 700;
     text-transform: uppercase;
 }
-.box h2:before{
+
+.box h2:before {
     content: '//';
     margin-right: 5px;
 }
-.box p{
+
+.box p {
     font-size: 1.3em;
     line-height: 1.5em;
 }
+
 /*******************************************
-EDUCATION
+TIMELINE
 *******************************************/
-#education{
+
+.box .intro {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.timeline {
     margin-top: 20px;
     position: relative;
     padding: 1em 0;
     list-style: none;
 }
-#education:before {
+
+.timeline:before {
     width: 5px;
     height: 100%;
     position: absolute;
@@ -101,111 +124,110 @@ EDUCATION
     content: ' ';
     display: block;
     background: #37382F;
-    background: -moz-linear-gradient(top,  #ffffff 0%, #37382F 7%, #37382F 89%, #ffffff 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#37382F), color-stop(89%,#37382F), color-stop(100%,#ffffff));
-    background: -webkit-linear-gradient(top,  #ffffff 0%,#37382F 7%,#37382F 89%,#ffffff 100%);
-    background: -o-linear-gradient(top,  #ffffff 0%,#37382F 7%,#37382F 89%,#ffffff 100%);
-    background: -ms-linear-gradient(top,  #ffffff 0%,#37382F 7%,#37382F 89%,#ffffff 100%);
-    background: linear-gradient(to bottom,  #ffffff 0%,#37382F 7%,#37382F 89%,#ffffff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+    background: -moz-linear-gradient(top, #ffffff 0%, #37382F 7%, #37382F 89%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(7%, #37382F), color-stop(89%, #37382F), color-stop(100%, #ffffff));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #37382F 7%, #37382F 89%, #ffffff 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #37382F 7%, #37382F 89%, #ffffff 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #37382F 7%, #37382F 89%, #ffffff 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #37382F 7%, #37382F 89%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
 }
-#education li{
+
+.timeline li {
     width: 100%;
     z-index: 2;
     position: relative;
     float: left;
 }
-#education .date{
-    width: 10%;
-    background: #fff;
+
+.timeline .date {
+    width: 20%;
+    background: #EFEFEF;
     padding: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 700;
+    font-style: italic;
     display: inline-block;
 }
-#education .description{
-    width: 80%;
+
+.timeline .description {
+    width: 75%;
     display: inline-block;
     background: #eee;
     margin-bottom: 10px;
     position: relative;
     padding: 10px 10px 5px 10px;
-    border: 1px solid #37382F;
+    /*border: 1px solid #37382F;*/
 }
-/*#education .description:after {*/
-    /*content: '';*/
-    /*position: absolute;*/
-    /*top: 15px;*/
-    /*right: 0;*/
-    /*left: -16px;*/
-    /*height: 0;*/
-    /*width: 0;*/
-    /*border: 8px solid transparent;*/
-    /*border-right-color: #eee;*/
-    /*pointer-events: none;*/
-/*}*/
-#education .description h3{
+
+.timeline .description h3 {
     font-size: 1.6em;
     margin: 0;
     padding: 0;
     font-weight: 700;
 }
-#education .description p{
+
+.timeline .description p {
     font-size: 1.3em;
     margin-top: 5px;
     padding: 0;
 }
+
 /*******************************************
-EXPERIENCES
+EDUCATION
 *******************************************/
-.edu{
+.edu {
     margin-bottom: 15px;
+    padding: 10px;
 }
-.edu .where{
-    font-size: 1.4em;
-    font-weight: bold;
-}
-.edu .date{
-    font-size: 1.3em;
-    opacity: 0.7;
-}
-.edu .profession{
-    font-size: 1.6em;
-    font-weight: bold;
-}
-.edu .description{
+
+.edu .where {
     font-size: 1.2em;
-    line-height: 1.5em;
 }
+
+.edu .date {
+    font-size: 1.0em;
+    color: #A4A4A0;
+}
+
+.edu b, a {
+    color: #D4B12A;
+}
+
 /*******************************************
 CONTACT
 *******************************************/
-.contact-item{
+.contact-item {
     width: 100%;
     float: left;
     padding: 10px;
 }
-.contact-item .title{
+
+.contact-item .title {
     width: calc(100% - 55px);
     font-size: 1.5em;
     font-weight: 700;
     opacity: 0.9;
 }
-.contact-item .description{
+
+.contact-item .description {
     width: calc(100% - 55px);
     font-size: 1.2em;
     opacity: 0.7;
 }
-.contact-item .fab, .fas{
+
+.contact-item .fab, .fas {
     margin-right: 10px;
 }
+
 /*******************************************
 SKILLS
 *******************************************/
-.skills{
+.skills {
     padding: 10px;
 }
-.item-skills{
+
+.item-skills {
     height: 25px;
     background: #D4B12A;
     color: #EFEFEF;
@@ -216,11 +238,14 @@ SKILLS
     text-overflow: ellipsis;
     font-size: 0.8em;
     font-weight: 600;
-}.skills-legend{
-     margin-top: 20px;
-     opacity: 0.8;
- }
-.skills-legend:before{
+}
+
+.skills-legend {
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+.skills-legend:before {
     width: 100%;
     height: 3px;
     position: relative;
@@ -229,14 +254,16 @@ SKILLS
     margin-bottom: -13px;
     background: #c6c6c6;
 }
-.skills-legend div{
+
+.skills-legend div {
     width: 25%;
     display: inline-block;
     font-size: 1.2em;
     color: #a9a9a9;
     float: left;
 }
-.legend:before{
+
+.legend:before {
     width: 3px;
     height: 10px;
     position: relative;
@@ -245,50 +272,59 @@ SKILLS
     margin: auto auto 15px;
     background: #c6c6c6;
 }
-.legend-left.legend:before{
+
+.legend-left.legend:before {
     margin-left: 0;
 }
-.legend-right.legend:before{
+
+.legend-right.legend:before {
     margin-right: 0;
 }
-.legend-left:nth-child(2) span{
+
+.legend-left:nth-child(2) span {
     margin-left: -25px;
 }
-.legend-right:nth-child(3) span{
+
+.legend-right:nth-child(3) span {
     margin-right: -20px;
 }
-.legend-right{
+
+.legend-right {
     text-align: right;
 }
+
 /*******************************************
 LANGUAGES
 *******************************************/
-#language-skills .lang{
-    font-size: 1.3em;
+.language-skills .lang {
+    font-size: 1.5em;
     margin: 10px 0;
     padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
 }
+
+.language-skills .lang span {
+    font-size: 1.0em;
+    font-weight: 300;
+    font-style: italic;
+    color: #A4A4A0;
+}
+
+.language-skills {
+    padding: 10px;
+}
+
 /*******************************************
 HOBBIES
 *******************************************/
-.hobby{
-    color: #fff;
+.hobby {
+    color: #EFEFEF;
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 5px;
-    padding: 5px 5px 5px 25px;
+    padding: 10px;
     background: #968C6C;
     position: relative;
-    font-size: 1.2em;
-}
-.hobby:before{
-    content: "\f004";
-    font-style: normal;
-    font-weight: normal;
-    position: absolute;
-    top: 6px;
-    left: 7px;
+    font-size: 1.5em;
 }
 
 /*******************************************
@@ -300,7 +336,7 @@ STYLING FOR BOXES HEADERS
 }
 
 .styled > h2 {
-    line-height:30px;
+    line-height: 30px;
     margin: auto auto;
     padding: 10px;
     display: block;
