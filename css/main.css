@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     font-size: 1.3em;
     color: black;
-    background: white;
+    background: white url("../img/background.png") repeat;
 }
 
 /*******************************************
