@@ -23,8 +23,8 @@ PHOTO (AVATAR)
 }
 
 #photo {
-    width: 160px;
-    height: 160px;
+    width: 210px;
+    height: 210px;
     border-radius: 50%;
     overflow: hidden;
     padding: 5px;
@@ -33,8 +33,8 @@ PHOTO (AVATAR)
 }
 
 #photo img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
