@@ -327,6 +327,9 @@ HOBBIES
     font-size: 1.5em;
 }
 
+.hobby:hover .fa-heart{
+    color: red;
+}
 /*******************************************
 STYLING FOR BOXES HEADERS
 *******************************************/
